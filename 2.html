@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<title> Tutorial CSS | FONT DAN TEKS </title>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid" style="background-color:black;">
+				<div id="branding">
+					<h1 class="display-4"><kbd><small>Tutorial </small><code>CSS</code></kbd></h1>
+
+				</div>
+				<ul class="nav nav-tabs nav-justified">
+				<li class="nav-item"> <a  href="index.html" style="text-decoration: none"> <p class="text-center"> HOME</p></a></li>
+				<li class="nav-item"> <a  href="1.html" style="text-decoration: none" > <p class="text-center"> Apakah CSS itu?</p></a></li>
+				<li class="nav-item"> <a class="nav-link active" href="#" style="text-decoration: none"><p class="text-center"> Fonts dan Teks
+				</p></a></li>
+				<li class="nav-item"> <a href="3.html" style="text-decoration: none" > <p class="text-center">Semua Tentang Boks</p></a></li>
+				<li class="nav-item"> <a  href="4.html" style="text-decoration: none"><p class="text-center"> Kesimpulan</p></a></li>
+		</ul>
+		</div>
+		</div> 
+		</header>
+
+<section id="showcase">
+			<div class="container">
+				<h1 style="margin-top: 20px">Fonts Dan Teks</h1>
+			<div class="row">
+					<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+				<p style="margin-top: 5px">
+Setelah mengeksplor dasar-dasar CSS, mari kita tambahkan aturan-aturan lain dan informasi<br>
+pada file <font color="#0000FF">style.css</font> kita agar contoh yang kita buat memiliki tampilan yang lebih baik. Kita<br>
+dapat memulai dengan membuat fonts dan teks kita untuk terlihat sedikit lebih baik.
+				</p>
+				<ol>
+				<li><p>
+Pertama-tama, kembalilah dan temukan keluaran dari Google Fonts yang kamu simpan di<br>
+tempat yang aman. Tambahkan elemen &lt;link&gt; di suatu tempat pada bagian head dari<br>
+index.html kamu (di manapun di antara tag &lt;head&gt; dan &lt;/head&gt;). Elemen link tersebut<br>
+akan terlihat seperti ini:<br></p>
+<div class="col-sm-10 bg-dark" > <pre class="text-success" >&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'&gt;</div>
+				</pre></li>
+				<li><p>
+Selanjutnya, hapus aturan yang sudah ada yang kamu miliki di file <font color="#0000FF">style.css</font>
+				</p></li>
+				<li><p>
+Tambahkan baris berikut, dan ubah baris placeholder dengan font-family sungguhan<br>
+yang kamu dapatkan dari Google Fonts. (font-family berarti jenis font yang ingin kamu<br>
+gunakan untuk teks.) Aturan ini mengatur jenis font dan ukuran font dasar secara global untuk<br>
+seluruh halaman (karena <font color="#0000FF">&lt;html&gt;</font> merupakan parent element dari seluruh halaman, dan semua elemen<br>
+di dalam halaman tersebut mewarisi font-size dan font-family yang sama):<br>
+<div class="col-sm-10 bg-dark" > <pre class="text-success" >html {
+  &nbsp;&nbsp;&nbsp;&nbsp;font-size: 10px; /* px berarti 'pixels': ukuran font dasar sekarang tinggi 10 piksel  */
+  &nbsp;&nbsp;&nbsp;&nbsp;font-family: placeholder;
+} </pre></div>
+				</p></li>
+				<li><p>
+Sekarang kita akan menentukan font size untuk elemen-elemen berisi teks yang ada di<br>
+dalam body HTML (<font color="#0000FF">&lt;h1&gt;</font>, <font color="#0000FF">&lt;li&gt;</font>, dan <font color="#0000FF">&lt;p&gt;</font>). Kita juga akan menengahkan posisi teks pada<br>
+heading dan menentukan line height serta letter spacing pada konten bagian body agar<br>
+dapat lebih mudah dibaca:<br>
+<div class="col-sm-10 bg-dark" > <pre class="text-success" >h1 {
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 60px;
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+p, li {
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 16px; 
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 2;
+&nbsp;&nbsp;&nbsp;&nbsp;letter-spacing: 1px;
+}</pre>
+</div>
+				</p></li>
+				</ol>
+				<p>
+Kamu dapat menyesuaikan nilai-nilai px tersebut untuk mendapatkan desain yang kamu inginkan,<br>
+namun secara umum desain kamu seharusnya akan terlihat seperti ini:<br>
+<img src="img/web.png" class="mx-auto d-block"  style="width:50%">
+				</p>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="jumbotron text-center" style="margin-bottom:0; margin-top: 50px">
+
+<div class="col-sm-12">
+  <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Website ini milik Kami</button>
+  <div id="demo" class="collapse" >
+ 
+  <ul class="list-group list-group-horizontal" style="margin: auto">
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Syahrul Wirawan</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Fikhayin Nafi</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Farhan NP</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Endar D. Suprayogo</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Haryanto Ricky</li>
+  </ul>
+</div>
+
+</div> 
+</div>
+
+		</footer>
+	</body>
+
+</html>

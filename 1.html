@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title> Tutorial CSS | APAKAH CSS ITU? </title>
+
+</head>
+
+<body>
+	<header>
+			<div class="container-fluid" style="background-color:black;">
+				<div id="branding">
+					<h1 class="display-4"><kbd><small>Tutorial </small><code>CSS</code></kbd></h1>
+				</div>
+
+				<ul class="nav nav-tabs nav-justified">
+				<li class="nav-item"> <a href="index.html" style="text-decoration: none"> <p class="text-center"> HOME</p></a></li>
+				<li class="nav-item"> <a class="nav-link active" href="#" style="text-decoration: none"> <p class="text-center"> Apakah CSS itu?</p></a></li>
+				<li class="nav-item"> <a href="2.html" style="text-decoration: none"><p class="text-center"> Fonts dan Teks
+				</p></a></li>
+				<li class="nav-item"> <a href="3.html" style="text-decoration: none" > <p class="text-center">Semua Tentang Boks</p></a></li>
+				<li class="nav-item"> <a href="4.html" style="text-decoration: none"><p class="text-center"> Kesimpulan</p></a></li>
+		</ul>
+		</div>
+		</div> 
+		</header>
+<section id="showcase">
+			<div class="container">
+				<h1 style="margin-top: 20px">Apakah CSS Itu?</h1>
+			<div class="row">
+					<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<p style="margin-top: 5px">Seperti HTML, CSS bukanlah sebuah bahasa pemrograman. CSS juga bukanlah sebuah bahasa 
+	markup — ia adalah suatu bahasa style sheet. Artinya, dengan CSS kamu dapat 
+	mengaplikasikan gaya pada elemen-elemen yang ada dalam dokumen HTML. Sebagai contoh, untuk membuat teks pada seluruh elemen paragraf dalam satu halaman HTML 
+	menjadi berwarna merah, kamu akan menulis CSS sebagai berikut:</p> 
+	<img src="img/stylecss.jpg" class="mx-auto d-block" alt="stylecss" style="width:70%; margin-top: 15px;margin-bottom: 15px"> 
+	<p class="-center">Salin ketiga baris dari kode CSS tersebut ke dalam suatu file baru di teks
+ editor kamu, lalu simpan file tersebut sebagai style.css di direktori styles kamu.</p>
+	
+	<p style="margin-top: 5px">Namun kita masih perlu untuk mengaplikasikan CSS tersebut ke dokumen HTML kamu. Jika tidak, CSS tersebut tidak akan berpengaruh pada bagaimana browser akan menampilkan dokumen HTML tersebut. (Kalau kamu belum mengikuti proyek kami, bacalah Dealing with files dan HTML basics untuk mencari tahu apa saja yang perlu kamu lakukan sebelumnya.)</p>	
+		<ol type="1">
+			<li>Buka file index.html kamu dan letakkan baris berikut di suatu tempat di bagian head (di 
+		  antara tag <head> dan </head>):</li>
+			<img src="img/stylecss1.jpg" class="mx-auto d-block"  alt="stylecss1" style="width:76%; margin-top: 15px;margin-bottom: 15px"> 
+			<li>Simpan index.html dan buka halaman tersebut di browser kamu. Seharusnya muncul
+		tampilan seperti ini:</li>
+			<img src="img/stylecss2.jpg" class="mx-auto d-block" alt="stylecss2" style="width:50%"> 
+		</ol>
+	<p>Jika teks paragraf kamu sekarang berwarna merah, selamat! Kamu berhasil menulis CSS pertama kamu.</p> 
+		</div>
+	<h1 style="margin-top: 20px">Bagian-Bagian Dari Sebuah CSS Ruleset</h1>
+	<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<p style="margin-top: 5px">Mari kita lihat CSS di atas dengan sedikit lebih detil:</p>
+	<img src="img/stylecss3.jpg" class="mx-auto d-block" alt="stylecss3" style="width:50%; margin-top: 15px;margin-bottom: 15px">
+	<p> Struktur di atas merupakan sebuah rule set (atau sering disebut "rule" supaya lebih singkat). Perhatikan nama dari masing-masing bagian di atas:</p>
+	
+	<h3>Selector</h3>
+	<p>Nama elemen HTML di awal rule set. Selector menandai satu atau lebih elemen yang akan diberikan gaya (contoh di sini menggunakan elemen p). 
+	Untuk memberikan gaya pada elemen lain, kamu bisa mengubah selector sesuai elemen yang kamu inginkan.</p>
+	
+	<h3>Declaration</h3>
+	<p>Suatu peraturan seperti color: red; yang menentukan properti mana dari elemen yang ingin kamu beri gaya.</p>
+	
+	<h3>Properties</h3>
+	<p>Cara kamu memberikan gaya terhadap elemen HTML (contoh di sini, color 
+	adalah properti dari {elemen {htmlelement("p")}}.) Di dalam CSS, kamu memilih properti mana saja yang ingin kamu berikan gaya di peraturan kamu.</p>
+	
+	<h3>Property Value</h3>
+	<p>Sebelah sisi kanan properti setelah tanda titik dua, kita memiliki nilai properti, yang memilih 
+	satu dari banyak kemungkinan penampilan untuk properti yang diberikan (ada banyak sekali 
+	nilai-nilai color selain red).</p>
+	
+	<p>Perhatikan juga bagian-bagian lain dari sintaks di atas:</p>
+	<ul>
+		<li>Masing-masing rule set (selain selector) harus dibungkus dengan sepasang kurung kurawal ({}).</li>
+		<li>Dalam masing-masing deklarasi, kamu harus menggunakan tanda titik dua (:) untuk memisahkan properti dari nilai-nilainya.</li>
+		<li>Dalam masing-masing rule set, kamu harus menggunakan tanda titik-koma (;) untuk memisahkan satu deklarasi dengan deklarasi berikutnya.</li>
+	</ul>
+	
+	<p>Untuk memodifikasi banyak nilai properti sekaligus, kamu hanya perlu menggunakan tanda titik-koma sebagai pemisah, seperti ini:</p>
+	<img src="img/stylecss4.jpg" class="mx-auto d-block" alt="stylecss4" style="width:70%; margin-top: 15px;margin-bottom: 15px">
+	</div>
+	<h1 style="margin-top: 20px">Memilih Banyak Elemen</h1>
+		<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<p style="margin-top: 5px">Kamu juga dapat memilih lebih dari satu tipe elemen dan mengaplikasikan sebuah rule set untuk
+	semua tipe elemen. Untuk melakukannya, kamu dapat menuliskan lebih dari satu selector 
+	dipisahkan dengan tanda koma. Sebagai contoh:</p>
+		<img src="img/stylecss5.jpg" class="mx-auto d-block" alt="stylecss5" style="width:70%; margin-top: 15px;margin-bottom: 15px">
+	</div>
+	
+	<h1 style="margin-top: 20px">Beragam Tipe Selector</h1>
+			<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<p style="margin-top: 5px">Ada banyak sekali tipe selector yang berbeda. Di atas, kita hanya mempelajari element selectors, 
+	yang memilih seluruh elemen dari tipe yang diberikan di dokumen HTML 
+	yang diberikan. Namun kita dapat membuat pilihan yang lebih spesifik daripada itu. Berikut adalah 
+	beberapa tipe selector lain yang sering dijumpai:</p>
+	
+  <table class="table table-bordered">
+    <thead class="thead-light">
+  <tr>
+    <th>Nama Selector</th>
+    <th>Apa yang Dipilih</th>
+    <th>Contoh</th>
+  </tr>
+</thead>
+  <tr>
+    <td rowspan="2">Element selector (kadang-kadang juga disebut sebagai tag atau type selector</td>
+    <td rowspan="2">Seluruh elemen HTML dari tipe yang diberikan.</td>
+    <td>p</td>
+  </tr>
+  <tr>
+    <td colspan="2">Memilih < p></td>
+  </tr>
+  <tr>
+	<td rowspan="2">ID selector</td>
+	<td rowspan="2">Elemen pada halaman dengan ID yang diberikan (pada halaman HTML yang diberikan, kamu hanya boleh memiliki satu elemen per ID).</td>
+	<td>#my-id</td>
+  </tr>
+  <tr>
+    <td>Memilih < p id="my-id"> atau < a id="my-id"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Class Selector</td>
+	<td rowspan="2">Satu atau lebih elemen pada halaman dengan kelas yang ditentukan (banyak class instances yang dapat muncul di sebuah halaman).</td>
+	<td>.my-class</td>
+  </tr>
+  <tr>
+	<td>Memilih< p class="my-class"> dan < a class="my-class"></td>
+  </tr>
+  <tr>
+	<td rowspan="2">Attribute Selector</td>
+	<td rowspan="2">Satu atau lebih elemen pada halaman dengan atribut yang ditentukan.</td>
+	<td>img[src]</td>
+  </tr>
+  <tr>
+    <td>Memilih < img src="myimage.png"> namun tidak memilih < img></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Pseudo-class Selector</td>
+	<td rowspan="2">Satu atau lebih elemen yang ditentukan, namun hanya ketika elemen tersebut sedang berada pada state tertentu, seperti sedang di-hover.</td>
+	<td>a:hover</td>
+  </tr>
+  <tr>
+	<td>Memilih < a>, namun hanya ketika mouse pointer sedang meng-hover link.</td>
+  </tr>
+	</table> 
+
+  <p>Ada banyak sekali selector lain yang dapat dieksplor, dan kamu dapat menemukan daftar yang lebih detil di Selectors guide kami.</p>
+</div>
+</div>
+</div>	
+		<footer>
+			<div class="jumbotron text-center" style="margin-bottom:0; margin-top: 50px">
+
+<div class="col-sm-12">
+  <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Website ini milik Kami</button>
+  <div id="demo" class="collapse" >
+ 
+  <ul class="list-group list-group-horizontal" style="margin: auto">
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Syahrul Wirawan</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Fikhayin Nafi</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Farhan NP</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Endar D. Suprayogo</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Haryanto Ricky</li>
+  </ul>
+</div>
+
+</div> 
+</div>
+
+		</footer>
+</body>
+</html>

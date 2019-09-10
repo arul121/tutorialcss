@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<title> Tutorial CSS | SEMUA TENTANG BOKS </title>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid" style="background-color:black;">
+				<div id="branding">
+					<h1 class="display-4"><kbd><small>Tutorial </small><code>CSS</code></kbd></h1>
+
+				</div>
+				<ul class="nav nav-tabs nav-justified">
+				<li class="nav-item"> <a  href="index.html" style="text-decoration: none"> <p class="text-center"> HOME</p></a></li>
+				<li class="nav-item"> <a  href="1.html" style="text-decoration: none" > <p class="text-center"> Apakah CSS itu?</p></a></li>
+				<li class="nav-item"> <a href="2.html" style="text-decoration: none"><p class="text-center"> Fonts dan Teks
+				</p></a></li>
+				<li class="nav-item"> <a class="nav-link active" href="#" style="text-decoration: none" > <p class="text-center">Semua Tentang Boks</p></a></li>
+				<li class="nav-item"> <a  href="4.html" style="text-decoration: none"><p class="text-center"> Kesimpulan</p></a></li>
+		</ul>
+		</div>
+		</div> 
+		</header>
+
+<section id="showcase">
+			<div class="container">
+				<h1 style="margin-top: 20px">Semua Tentang Boks</h1>
+			<div class="row">
+					<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+				<p style="margin-top: 5px">
+Satu hal yang akan kamu sadari tentang menulis CSS adalah banyak hal dalam CSS sebenarnya terkait dengan boks — mengatur ukuran, warna, posisi, dan lain-lain. Kebanyakan dari elemen-elemen HTML yang ada di halaman kamu dapat dilihat sebagai banyak boks yang saling bertumpuk di atas satu sama lain.
+				</p>
+				<img src="img/boxes.jpg" class="mx-auto d-block"  style="width:50%">
+				<p>
+					Pada prinsipnya, susunan CSS didasari oleh box model. Masing-masing blok akan menempati tempat di halaman kamu dengan properti sebagai <br> berikut:
+				</p>
+				<ul>
+				<li><p>
+<font color="#0000FF">padding</font>, ruang di sekitar konten (e.g., di sekitar teks paragraf)</li>
+				<li><p>
+<font color="#0000FF">border</font>, garis solid yang ada di luar padding
+				</p></li>
+				<li><p><font color="#0000FF">margin</font>, ruang di luar elemen</p></li></ul>
+				
+				<img src="img/box-model.png" class="mx-auto d-block"  style="width:50%">
+			<p>
+				Pada bagian ini kita juga menggunakan:
+			</p>
+				<ul>
+				<li><p>
+<font color="#0000FF">width</font> (lebar dari sebuah elemen)</li>
+				<li><p>
+<font color="#0000FF">background-color</font>, warna di belakang konten dan padding sebuah elemen
+				</p></li>
+				<li><p><font color="#0000FF">color</font>, warna dari konten elemen (biasanya berupa teks)
+</p></li>
+<li><p>
+	<font color="#0000FF">text-shadow </font>: mengatur drop shadow pada teks di dalam elemen</p>
+</li>
+<li><p>
+	<font color="#0000FF">display</font>: : mengatur tampilan sebuah elemen (untuk sekarang, abaikan hal ini)</p>
+</li></ul>
+				<p>
+Ayo kita mulai menambahkan lebih banyak CSS pada halaman kita! Terus tambahkan aturan-aturan baru sampai ke bagian bawah halaman, dan jangan takut untuk bereksperimen dengan menggonta-ganti nilai-nilai untuk melihat bagaimana hasilnya.<br>
+				</p>
+			</div>
+			<h1>
+				Mengganti Warna Halaman
+			</h1>
+<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<div class="col-sm-10 bg-dark" style="margin-top: 10px" > <pre class="text-success" >html {
+ background-color: #00539F;
+ }		</pre></div>
+
+				<p style="margin-top: 5px">
+					Aturan ini mengatur warna latar belakang seluruh halaman. Gantilah kode warna di atas menjadi warna apapun yang Anda pilih ketika Anda merencanakan situs Anda.
+				</p>
+	</div>
+	<h1>
+		Mengatur Body
+	</h1>
+	<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<div class="col-sm-10 bg-dark" style="margin-top: 10px" > <pre class="text-success" >body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}</pre></div>
+	<p>
+		Sekarang kita akan mengatur elemen <font color="#0000FF"> < body > </font>. Ada beberapa deklarasi di sini, jadi mari kita bahas semuanya satu per satu:
+	</p>
+	<ul>
+		<li><p>
+<font color="#0000FF">width: 600px;</font> — aturan ini memaksa body untuk selalu memiliki lebar sepanjang 600 piksel.</li></p>
+		<li><p>
+<font color="#0000FF">margin: 0 auto;</font> — ketika kamu mengatur dua nilai pada dua properti seperti <font color="#0000FF"> margin</font> atau <font color="#0000FF">padding</font> nilai pertama akan memengaruhi sisi atas dan bawah dari elemen (pada contoh ini, buatlah <font color="#0000FF"> 0 </font>), dan nilai kedua akan memengaruhi sisi kiri dan kanan  (di sini, auto adalah sebuah nilai khusus yang dapat membagi ruang horizontal yang ada secara adil antara kiri dan kanan).</p>
+		</li>
+		<li><p><font color="#0000FF">background-color: #FF9500;</font> — sama seperti sebelumya, aturan ini menentukan warna latar belakang elemen. Kita sudah menggunakan warna merah kejinggaan untuk bagian body, namun teruslah bereksperimen.)</p>
+		</li>
+		<li><p>
+	<font color="#0000FF">padding: 0 20px 20px 20px;</font> — kita memiliki empat nilai yang mengatur padding untuk membuat sedikit ruang di sekitar konten kita. Saat ini, kita menentukan tidak ada padding pada sisi atas dari body, dan ada padding sepanjang 20 piksel di sisi kiri, bawah, dan kanan. Nilai-nilai di atas mengatur bagian atas, kanan, bawah, dan kiri secara berurutan.</p>
+		</li>
+		<li><p>
+	<font color="#0000FF">border: 5px solid black; </font>— aturan ini mengatur border setebal 5 piksel berwarna hitam di seluruh sisi body.</p>
+		</li>
+	</ul>
+</li>
+</ul>
+</div>
+	<h1>
+		Mengatur Posisi Dan Memberikan Gaya Pada Judul Halaman Utama Kita
+	</h1>
+	<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+	<div class="col-sm-10 bg-dark" style="margin-top: 10px" > <pre class="text-success" >h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}</pre>
+</div>
+<p>
+	Kamu mungkin sudah menyadari bahwa ada jarak yang cukup jelek di bagian atas body. Hal tersebut terjadi karena beberapa browser mengaplikasikan gaya yang bersifat default ke elemen <font color="#0000FF">< h1 ></font> element (salah satunya), meski kamu belum memberikan CSS apapun sama sekali! Kedengarannya buruk, namun kita juga menginginkan halaman web yang belum diberikan gaya juga memiliki keterbacaan yang mendasar. Untuk menghilangkan jarak tersebut, kita dapat merubah gaya default tersebut dengan mengatur  <font color="#0000FF">margin: 0;</font>.<br><br>
+
+Selanjutnya, kita mengatur bagian atas dan bawah padding menjadi 20 piksel, dan membuat warna dari teks heading agar sama dengan warna latar belakang HTML.<br><br>
+
+Sebuah properti menarik yang kita gunakan adalah <font color="#0000FF">text-shadow</font>, di mana properti ini akan mengaplikasikan bayangan teks ke konten teks dari sebuah elemen. Empat nilai dari properti tersebut adalah sebagai berikut:
+</p>
+<ul>
+		<li><p>Nilai piksel pertama mengatur <b><i>horizontal offset</i></b> bayangan dari teks — seberapa jauh bayangan tersebut berada (secara horizontal): sebuah nilai negatif seharusnya akan memindahkan bayangan tersebut ke sisi kiri.</p>
+		</li>
+		<li><p>
+Nilai piksel kedua mengatur <b><i>vertical offset</i></b> bayangan dari teks — seberapa jauh bayangan tersebut berada (secara vertikal), pada contoh ini, sebuah nilai negatif akan memindahkannya ke atas.</p>
+		</li>
+		<li><p>
+Nilai piksel ketiga mengatur <b><i>blur radius</i></b> dari bayangan — nilai yang lebih besar akan membuat bayangan yang lebih kabur.</p>
+		</li>
+		<li>
+			<p>Nilai keempat mengatur warna dasar dari bayangan.</p>
+		</li>
+	</ul>
+	<p>Cobalah untuk bereksperimen dengan berbagai nilai berbeda dan lihat hasilnya!</p>
+</div>
+<h1>
+	Memposisikan Gambar Ke Tengah
+</h1>
+<div class="col-sm-12" style="background-color:lavenderblush; margin-top: 10px">
+<div class="col-sm-10 bg-dark" style="margin-top: 10px" > <pre class="text-success" >img {
+  display: block;
+  margin: 0 auto;
+}</pre>
+</div>
+<p>
+	Akhirnya, kita akan memposisikan gambar ke tengah untuk membuatnya terlihat lebih baik. Kita dapat menggunakan trik  <font color="#0000FF">margin: 0 auto</font> lagi seperti yang telah kita lakukan pada bagian body, namun ada satu hal lagi yang perlu dilakukan. Elemen <font color="#0000FF">< body ></font> adalah <b><i>block level</i></b>, di mana elemen tersebut menempati ruang di halaman dan kita juga dapat mengaplikasikan margin dan nilai-nilai spacing lain pada elemen tersebut. Di sisi lain, gambar adalah contoh dari inline element, yang berarti kita tidak dapat melakukan hal yang sama. Sehingga untuk mengaplikasikan margin pada gambar, kita harus memberikan gambar tersebut perlakuan seperti block level menggunakan <font color="#0000FF"> display: block;</font>.
+</p>
+		</section>
+
+
+
+		<footer>
+			<div class="jumbotron text-center" style="margin-bottom:0; margin-top: 50px">
+
+<div class="col-sm-12">
+  <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Website ini milik Kami</button>
+  <div id="demo" class="collapse" >
+ 
+  <ul class="list-group list-group-horizontal" style="margin: auto">
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Syahrul Wirawan</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">M. Fikhayin Nafi</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Farhan NP</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Endar D. Suprayogo</li>
+    <li style="width: 25%" class="list-group-item list-group-item-secondary">Haryanto Ricky</li>
+  </ul>
+</div>
+
+</div> 
+</div>
+
+		</footer>
+	</body>
+
+</html>
